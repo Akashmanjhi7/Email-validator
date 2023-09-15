@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  padding: 16px 12px;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo h3 {
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.logo h3 img {
+  padding: auto;
+  height: 3vw;
+  filter: invert(1);
+}
+ul {
+  display: flex;
+  /* column-gap: 10px; */
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  padding: 0 13px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul > li > a:hover {
+  color: rgb(191, 193, 218);
+}
+
+.main {
+  min-width: 90vw;
+  min-height: 85vh;
+  padding: 2px;
+}
+.container h1 {
+  padding: 12px 0px;
+}
+.container {
+  /* background-color: azure; */
+
+  width: 80vw;
+  margin: auto;
+  padding: 20px 15px;
+}
+input[type="email"]{
+    width: 43vw;
+    height: 5vh;
+    padding: 2px 10px;
+    font-size: 2.5vh;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.btn {
+  background-color: black;
+  color: white;
+  border: 1px solid grey;
+  padding: 6px 9px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.footer {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+#result div::first-letter{
+    text-transform:uppercase ;
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .logo h3 img {
+    height: 25px;
+  }
+
+  ul {
+    padding: 9px 0px;
+    font-size: 4.7vw;
+  }
+  .container {
+    font-size: 4vw;
+  }
+
+  .footer {
+    height: 25px;
+    font-size: 12px;
+  }
+  input[type="email"]{
+    width: 60vw;
+    padding: 2px 10px;
+}
+}
