@@ -21,7 +21,7 @@ var rescount=document.querySelector("#resultcount");
 
 submitbtn.addEventListener("click", async (e)=>{
     e.preventDefault()
-    rescount.innerHTML = ` <img src="/img/loading.svg" alt="">`
+    rescount.innerHTML = ` <img src="img/loading.svg" alt="">`
     console.log("This is clicked")
     let key="ema_live_knJM5FfWfecuOtHQLmdn0M1U7xBl99qcxNglG6B9"
     let email =document.getElementById("email").value
